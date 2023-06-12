@@ -3,7 +3,7 @@
 	lang="{{ app()->getLocale() }}"{{ (!empty($htmlAttribute)) ? $htmlAttribute : '' }}  
 	class="{!! define_aboutapp('mode') !!}">
     <head>
-        @include('templates.'.$template.'.partial.head') 
+        @include('templates.'.$template.'.partial.head')  
     </head>
     <body class="pace-done theme-{!! define_aboutapp('color') !!}"> 
         <!-- BEGIN #app -->
@@ -39,5 +39,7 @@
         <script src="{{ asset('/public/studio_v30') }}/assets/plugins/highlight.js/highlight.min.js"></script>
         <script src="{{ asset('/public/studio_v30') }}/assets/js/demo/highlightjs.demo.js"></script>
         <!-- ================== END page-js ================== -->
+        
+	    <script src="{{ asset('/public/studio_v30') }}/assets/plugins/summernote/dist/summernote-lite.min.js"></script>
     </body>
 </html>

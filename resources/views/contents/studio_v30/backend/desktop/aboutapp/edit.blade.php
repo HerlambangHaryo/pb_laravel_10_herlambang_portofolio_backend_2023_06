@@ -4,9 +4,11 @@
 
 @section('content')   
 
-    <form class="col-12" action="{{ route($content.'.update', $data->id ) }}" 
+    <form class="col-12" 
+        action="{{ route($content.'.update', $data->id ) }}" 
         method="POST"  
-        enctype="multipart/form-data"> 
+        enctype="multipart/form-data"
+        > 
         @csrf   
         @method('PUT')  
 
