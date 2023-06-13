@@ -46,6 +46,11 @@
                                                 width="100%"
                                                 src="{{ asset('/public/storage/aboutapp/').'/'.$row->logo }}" 
                                                 alt=""> 
+                                        <!-- card-img --> 
+                                            <img 
+                                                width="100%"
+                                                src="{{ asset('/public/studio_v30/assets/img/user/').'/profile.jpg' }}" 
+                                                alt=""> 
                                     </td>  
                                     <td class="text-left">  
                                         <!-- card-img --> 
