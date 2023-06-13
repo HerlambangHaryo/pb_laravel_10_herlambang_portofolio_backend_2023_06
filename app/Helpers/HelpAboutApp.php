@@ -1,5 +1,5 @@
 <?php 
-use App\Models\AboutApp;
+use App\Models\Aboutapp;
 
     if(!function_exists('define_aboutapp'))
     {
