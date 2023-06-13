@@ -20,10 +20,10 @@
                     <table id="datatableDefault" class="table  ">
                         <thead class=" ">
                             <tr>               
-                                <x-html.th-content-width title="No." width="10%" />
-                                <x-html.th-content title="Logo"   />  
-                                <x-html.th-content title="Company"   />   
+                                <x-html.th-content-width title="No." width="10%" />  
                                 <x-html.th-content title="Title"   />   
+                                <x-html.th-content title="Date"   />  
+                                <x-html.th-content title="University"   /> 
                                 <x-html.th-content title="Task"   />   
                                 <x-html.th-content-width title="Action" width="15%" /> 
                             </tr>
@@ -34,23 +34,18 @@
                                 <tr>
                                     <td class="text-center">
                                         {{ $loop->iteration }}
-                                    </td>
-                                    <td class="text-center">   
-                                        <!-- card-img --> 
-                                            <img 
-                                                width="100%"
-                                                src="{{ asset('/public/storage/company/').'/'.$row->company_logo }}" 
-                                                alt=""> 
-                                    </td>  
-                                    <td class="text-center">  
-                                        {{ $row->company }}   
-                                        <br/> 
-                                        {{ $row->city }},  
-                                        {{ $row->country }}  
-                                    </td>   
+                                    </td> 
                                     <td class="text-center">  
                                         {{ $row->title }}  
                                     </td>    
+                                    <td class="text-center">  
+                                        {{ $row->date_start }} -
+                                        {{ $row->date_end }}  
+                                    </td>    
+                                    <td class="text-center">  
+                                        {{ $row->university }}   ,  
+                                        {{ $row->country }}  
+                                    </td>   
                                     <td class="text-left">  
                                         {{ $row->task }}  
                                     </td>    

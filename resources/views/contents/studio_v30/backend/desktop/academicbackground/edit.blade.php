@@ -6,8 +6,7 @@
 
     <form class="col-12"  
         action="{{ route($content.'.update', $data->id ) }}" 
-        method="POST"  
-        enctype="multipart/form-data" 
+        method="POST"   
         > 
         @csrf    
         @method('PUT')  
@@ -19,50 +18,38 @@
             <div class="card-body pb-4">      
                 <div class="row justify-content-md-center">     
                     <div class="col-11"> 
+ 
 
-                        <!-- Company -->
-                            <div class="form-group row mb-3">
+                        <!-- Title -->
+                        <div class="form-group row mb-3">
                                 <label class="col-2 col-form-label">
-                                    Company 
+                                    Title 
                                 </label>
                                 <div class="col-6">
                                     <input 
                                         type="text" 
                                         class="form-control form-control-lg"  
-                                        name="company" 
-                                        value="{{ old('company', $data->company) }}" 
+                                        name="title" 
+                                        value="{{ old('title', $data->title) }}" 
                                     >
                                 </div>
                             </div>   
 
-                        <!-- Company Logo -->
+                        <!-- University -->
                             <div class="form-group row mb-3">
                                 <label class="col-2 col-form-label">
-                                    Company Logo 
+                                    University 
                                 </label>
                                 <div class="col-6">
                                     <input 
-                                        type="file" 
-                                        class="form-control form-control-lg"  
-                                        name="company_logo"  
-                                    >
-                                </div>
-                            </div>  
-
-                        <!-- City -->
-                            <div class="form-group row mb-3">
-                                <label class="col-2 col-form-label">
-                                    City 
-                                </label>
-                                <div class="col-3">
-                                    <input 
                                         type="text" 
                                         class="form-control form-control-lg"  
-                                        name="city" 
-                                        value="{{ old('city', $data->city) }}" 
+                                        name="university" 
+                                        value="{{ old('university', $data->university) }}" 
                                     >
                                 </div>
-                            </div>     
+                            </div>   
+  
 
                         <!-- Country -->
                             <div class="form-group row mb-3">
@@ -77,22 +64,8 @@
                                         value="{{ old('country', $data->country) }}" 
                                     >
                                 </div>
-                            </div>    
-
-                        <!-- Title -->
-                            <div class="form-group row mb-3">
-                                <label class="col-2 col-form-label">
-                                    Title 
-                                </label>
-                                <div class="col-6">
-                                    <input 
-                                        type="text" 
-                                        class="form-control form-control-lg"  
-                                        name="title" 
-                                        value="{{ old('title', $data->title) }}" 
-                                    >
-                                </div>
                             </div>   
+                            
                         <!-- start -->
                             <div class="form-group row mb-3">
                                 <label class="col-2 col-form-label">
@@ -126,7 +99,7 @@
                         <!-- Task -->
                             <div class="form-group row mb-3">
                                 <label class="col-2 col-form-label">
-                                    Task
+                                    Task 
                                 </label> 
                                 <div class="col-8">
                                     <textarea 
@@ -142,5 +115,12 @@
         </div> 
 
         <x-studio_v30.button-submit />
-    </form> 
+    </form>
+
+    <script>
+        
+  $('.summernote').summernote({
+    height: 300
+  });
+    </script>
 @endsection

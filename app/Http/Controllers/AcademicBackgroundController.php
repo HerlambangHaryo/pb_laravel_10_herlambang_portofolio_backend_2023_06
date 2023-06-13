@@ -138,9 +138,7 @@ class AcademicBackgroundController extends Controller
                 'title'         => $request->title,
                 'date_start'    => $request->date_start,
                 'date_end'      => $request->date_end,
-                'is_present'    => $request->is_present,
-                'company'       => $request->company, 
-                'city'          => $request->city,
+                'university'    => $request->university, 
                 'country'       => $request->country,
                 'task'          => $request->task, 
             ]); 
@@ -224,11 +222,9 @@ class AcademicBackgroundController extends Controller
                 'title'         => $request->title,
                 'date_start'    => $request->date_start,
                 'date_end'      => $request->date_end,
-                'is_present'    => $request->is_present,
-                'company'       => $request->company, 
-                'city'          => $request->city,
+                'university'    => $request->university, 
                 'country'       => $request->country,
-                'task'          => $request->task, 
+                'task'          => $request->task,  
             ]); 
             
         // ----------------------------------------------------------- Send  
