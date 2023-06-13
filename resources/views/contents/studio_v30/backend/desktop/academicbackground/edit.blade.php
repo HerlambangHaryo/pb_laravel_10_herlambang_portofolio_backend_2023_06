@@ -115,12 +115,5 @@
         </div> 
 
         <x-studio_v30.button-submit />
-    </form>
-
-    <script>
-        
-  $('.summernote').summernote({
-    height: 300
-  });
-    </script>
+    </form> 
 @endsection
