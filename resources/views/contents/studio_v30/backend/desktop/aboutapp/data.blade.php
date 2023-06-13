@@ -58,6 +58,11 @@
                                                 width="100%"
                                                 src="{{ asset('/public/storage/aboutapp/').'/'.$row->ico }}" 
                                                 alt=""> 
+                                        <!-- card-img --> 
+                                            <img 
+                                                width="100%"
+                                                src="{{ asset('/public/aboutapp/').'/'.$row->ico }}" 
+                                                alt=""> 
                                     </td> 
                                     <td class="text-center">  
                                         {{ $row->theme }}  
