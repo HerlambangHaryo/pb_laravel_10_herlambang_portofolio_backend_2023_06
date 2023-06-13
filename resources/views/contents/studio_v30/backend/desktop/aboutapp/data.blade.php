@@ -44,7 +44,7 @@
                                         <!-- card-img --> 
                                             <img 
                                                 width="100%"
-                                                src="{{ asset('/public/storage/aboutapp/').'/'.$row->logo }}" 
+                                                src="{{ asset('/storage/aboutapp/').'/'.$row->logo }}" 
                                                 alt=""> 
                                         <!-- card-img --> 
                                             <img 
