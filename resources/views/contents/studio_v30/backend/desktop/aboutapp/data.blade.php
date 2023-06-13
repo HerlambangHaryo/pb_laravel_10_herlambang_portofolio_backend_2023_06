@@ -77,7 +77,7 @@
 
                                                 <img 
                                                 width="100%"
-                                                src="http://laravel.herlambangharyo.my.id/public/storage/aboutapp/nNdb3W9RfB8otzJenruGzEHsJQksHHrPc0Gv09D2.ico" 
+                                                src="http://laravel.herlambangharyo.my.id/public/storage/aboutapp/z1APNxLsuhJzJqfZzglRZZhFotkPtqc6FI2kYINy.png" 
                                                 alt=""> 
                                                 
                                     </td> 
