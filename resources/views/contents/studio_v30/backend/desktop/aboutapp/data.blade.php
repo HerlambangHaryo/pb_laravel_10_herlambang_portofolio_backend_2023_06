@@ -98,6 +98,12 @@
                                     </td> 
                                     <td class="text-center">  
                                         {{ $row->theme }}  
+                                        
+                                        <!-- card-img --> 
+                                        <img 
+                                                width="100%"
+                                                src="{{ asset('/storage/app/public/aboutapp/').'/'.$row->ico }}" 
+                                                alt=""> 
                                     </td>  
                                     <td class="text-center">  
                                         {{ $row->mode }}  
