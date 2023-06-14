@@ -46,6 +46,21 @@
                                                 width="100%"
                                                 src="{{ asset('/storage/aboutapp/').'/'.$row->logo }}" 
                                                 alt=""> 
+
+                                        <!-- card-img --> 
+                                        <img 
+                                                width="100%"
+                                                src="{{ public_path('/storage/aboutapp/').'/'.$row->logo }}" 
+                                                alt=""> 
+
+                                                
+
+                                        <!-- card-img --> 
+                                        <img 
+                                                width="100%"
+                                                src="{{ public_path('/public/storage/aboutapp/').'/'.$row->logo }}" 
+                                                alt=""> 
+
                                         <!-- card-img --> 
                                             <img 
                                                 width="100%"
