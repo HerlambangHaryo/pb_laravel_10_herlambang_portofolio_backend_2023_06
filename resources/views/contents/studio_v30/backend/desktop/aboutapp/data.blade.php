@@ -104,6 +104,16 @@
                                                 width="100%"
                                                 src="{{ asset('/storage/app/public/aboutapp/').'/'.$row->ico }}" 
                                                 alt=""> 
+                                        <!-- card-img --> 
+                                            <img 
+                                                width="100%"
+                                                src="{{ asset('/storage/app/public/aboutapp/'.$row->ico) }}" 
+                                                alt=""> 
+                                        <!-- card-img --> 
+                                            <img 
+                                                width="100%"
+                                                src="{{ asset('/storage/app/public/aboutapp/profile.jpg') }}" 
+                                                alt=""> 
                                     </td>  
                                     <td class="text-center">  
                                         {{ $row->mode }}  
